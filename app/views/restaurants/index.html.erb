@@ -6,9 +6,8 @@
       <%= restaurant.name %><br>
       Address: <%= restaurant.address %><br>
       Category: <%= restaurant.category %><br>
-      Rating: <%= restaurant.rating %>
+      Rating: <%= restaurant.rating %><br>
+      <%= link_to "Add new review", new_restaurant_review_path(restaurant) %>
     </li>
   <% end %>
-
-  <%= link_to "Add new review" , new_restaurant_path %>
 </div>
